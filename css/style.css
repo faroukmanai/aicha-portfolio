@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+@import "about.css";
+body{
+    margin:0;
+    padding:0;
+    font-family: poppins;
+    background-color: #232b3f;
+}
+
+nav{
+    width: 100%;
+    margin-top:30px;
+}
+nav ul{
+    padding:0;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    
+}
+nav ul li{
+    list-style: none; 
+}
+nav ul li a {
+    color:#faebd7;
+    text-decoration: none;
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height:3px;
+    position:absolute;
+    bottom:-5px;
+    left:50%;
+    transform:translateX(-50%);
+    background: #faebd7;
+    transition: width 0.4s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 190px;
+    font-weight: 900;
+    line-height: 1;
+    height: 100vh;
+}
+.main p{
+    margin:0;
+    text-transform: uppercase;
+}
+.first-name{
+    color:#faebd7;
+    
+}
+.last-name{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.job-name{
+    padding:20px 0;
+    font-size: 18px;
+    color:antiquewhite;
+}
+
+.last-name {
+	-webkit-text-stroke: 1px antiquewhite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center center;
+    background-size: cover;
+	/* -webkit-transition: all 1s linear; */
+    animation: changeImg-1 10s linear infinite;
+}
+
+  @keyframes changeImg-1 {
+    0%, 100% { 
+      background-image: url('../assets/images/Image 6.jpg');
+    }
+    12% { 
+        background-image: url('../assets/images/monde-montreal-mbam-4.jpg');
+    }
+    25% { 
+        background-image: url('../assets/images/IMG_6583.jpg');
+    }
+    35% { 
+        background-image: url('../assets/images/IMG_0433.JPG');
+    }
+    50% { 
+        background-image: url('../assets/images/DSC_0030.JPG');
+    }
+    70% { 
+        background-image: url('../assets/images/s600400-457391.jpg');
+    }
+    90% { 
+        background-image: url('../assets/images/Chagall_nDF_029_RET.jpg');
+    }
+  }
+.job-name{
+    display:flex;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+}
+.job-name a {
+    text-decoration: none;
+    color: #232b3f;
+    font-size: 12px;
+    padding:3px 5px;
+    background-color: antiquewhite;
+}
+.new-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px;
+    width: 80%;
+    margin: 60px auto; 
+    padding: 20px;
+}
+
+.card{
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid#faebd7;
+    position: relative;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position:absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    color:#faebd7;
+    box-sizing: border-box;
+    padding: 30px;
+    transition:1.5s;
+}
+
+.card:hover .card-body{
+    right:0;
+}
+.card-title{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+.card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400px;
+}
+
+
+
+
+

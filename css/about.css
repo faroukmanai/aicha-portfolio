@@ -1,0 +1,15 @@
+.about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px;
+    width: 80%;
+    margin: auto; 
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: antiquewhite;
+    font-size: 18px;
+    height: 50vh;
+}
+.about>div{
+    width: 320px;
+}
